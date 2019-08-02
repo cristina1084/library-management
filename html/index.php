@@ -1,4 +1,4 @@
 <?php
-header('location:library.html');
+header('location:main.html');
 
 ?>
