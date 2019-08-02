@@ -1,4 +1,7 @@
+
+
 $(document).ready(function(){             //jQuery
+
     $("#load,#card2").hide();
     $("#tp1,#tp2,#cat li").click(function(){
         var cat = $(this).text();
@@ -26,7 +29,7 @@ $(document).ready(function(){             //jQuery
                     for (var j in data){
                         if (cat == data[j].genre || cat == 'View All')
                         {
-                            card+="<div class='col-4 col-sm-4 col-md-4'> <div class='card'> <img class='card-img-top' src=" + data[j].urlToImage + " height='400px' width='150px'>";
+                            card+="<div class='col col-12 col-sm-6 col-md-3'> <div class='card'> <img class='card-img-top img-responsive' src=" + data[j].urlToImage + ">";
                             card+="<div class='card-body'> <h5 class='card-title'>"+ data[j].bookTitle +"</h5>";
                             card+="<h6 class='card-subtitle mb-2 text-muted'>" + data[j].author +"</h6> ";
                             card+="<p class='card-text text-justify'>"+ data[j].description + "</p> </div>";
